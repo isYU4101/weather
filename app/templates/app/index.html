@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
+    <title>天気予報</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href=""><div class="item">平均</div></a>
+            <a href=""><div class="item">Yahoo!</div></a>
+            <a href=""><div class="item">Tenki.jp</div></a>
+            <a href=""><div class="item">goo</div></a>
+        </div>
+        <div class="wether">
+            O月X日(△)の天気：ハレハレユカイ
+            <img src="{% static 'app/img/01.png' %}">
+        </div>
+        <div class="high">
+            最高気温：100度
+        </div>
+        <div class="low">
+            最低気温：-10度
+        </div>
+        <div class="url">
+            本家(<a href="">url</a>)
+        </div>
+    </div>
+</body>
+
+</html>
