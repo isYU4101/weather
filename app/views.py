@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .pick import pick_up_data
 import datetime
+import pytz
 
 def index(request):
-    dt_now = str(datetime.datetime.now())
+    dt_now = str(datetime.datetime.now(pytz.timezone('Asia/Tokyo')))
     month = dt_now[5:7]
     day = dt_now[8:10]
     data = pick_up_data()["total"]
